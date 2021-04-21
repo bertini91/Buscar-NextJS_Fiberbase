@@ -5,11 +5,11 @@ const Heading = styled.h1`
   color: red;
 `;
 
-export default function Home() {
+export default function NuevoProducto() {
   return (
     <div>
       <Layout>
-        <Heading>Inciio</Heading>
+        <Heading>Nuevo Producto</Heading>
       </Layout>
     </div>
   );
