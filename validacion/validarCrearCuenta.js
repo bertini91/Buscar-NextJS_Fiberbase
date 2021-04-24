@@ -21,6 +21,4 @@ export default function validarCrearCuenta(valores) {
   return errores;
 }
 
-// validar URL
 
-/* !/^(ftp|http|https):\/\/[^ "]+$/ */
