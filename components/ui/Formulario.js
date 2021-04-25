@@ -8,6 +8,7 @@ export const Formulario = styled.form`
     margin: 2rem 0;
     border: 1px solid #e1e1e1;
     padding: 2rem;
+    border-radius: 5px;
   }
 `;
 
@@ -23,6 +24,7 @@ export const Campo = styled.div`
   textarea {
     flex: 1;
     padding: 1rem;
+    border-radius: 5px;
   }
   textarea {
     height: 350px;
@@ -40,6 +42,7 @@ export const InputSubmit = styled.input`
   border: none;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  border-radius:5px;
 
   &:hover {
     cursor: pointer;

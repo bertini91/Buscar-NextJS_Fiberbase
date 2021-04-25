@@ -1,6 +1,7 @@
 import Layout from "../components/layout/Layout";
 import DetalleProducto from "../components/layout/DetalleProducto";
 import useProductos from "../hooks/useProductos";
+import { css } from "@emotion/react";
 
 export default function Home() {
   const { productos } = useProductos("creado");
@@ -10,7 +11,12 @@ export default function Home() {
       <Layout>
         <div className="listado-productos">
           <div className="contenedor">
-            <ul className="bg-white">
+            <ul
+              className="bg-white"
+              css={css`
+                border-radius: 10px;
+              `}
+            >
               {productos.map((producto) => (
                 <DetalleProducto
                   key={producto.id}

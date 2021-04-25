@@ -6,6 +6,7 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 import Boton from "../ui/Boton";
 import { FirebaseContext } from "../../firebase";
+import Image from "next/image";
 
 const ContenedorHeader = styled.div`
   max-width: 1200px;
@@ -26,6 +27,8 @@ const Logo = styled.a`
   margin-right: 2rem;
 `;
 
+/* const logoNB = require("../../img/logoNB"); */
+
 const Header = () => {
   const { usuario, firebase } = useContext(FirebaseContext);
   return (
@@ -44,7 +47,15 @@ const Header = () => {
             `}
           >
             <Link href="/">
-              <Logo>P</Logo>
+              <Logo>
+                <img
+                  src="/static/img/logonb.png"
+                  alt="Logo"
+                  css={css`width:12rem; height: 10rem;`}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </Logo>
             </Link>
             <Buscar></Buscar>
 
@@ -63,7 +74,7 @@ const Header = () => {
                     margin-right: 2rem;
                   `}
                 >
-                  Hola: {usuario.displayName}
+                  Hola: <strong> {usuario.displayName}</strong>
                 </p>
                 <Boton bgColor="true" onClick={() => firebase.cerrarSesion()}>
                   Cerrar Sesión

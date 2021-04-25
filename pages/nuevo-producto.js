@@ -119,7 +119,10 @@ export default function NuevoProducto() {
 
             <Formulario onSubmit={handleSubmit}>
               <fieldset>
-                <legend>Informacion General</legend>
+                <legend>
+                  
+                  <strong>Informacion General</strong>
+                </legend>
 
                 <Campo>
                   <label htmlFor="nombre">Nombre</label>
@@ -177,7 +180,9 @@ export default function NuevoProducto() {
                 {errores.url && <Error>{errores.url}</Error>}
               </fieldset>
               <fieldset>
-                <legend>Sobre tu Producto</legend>
+                <legend>
+                  <strong>Sobre tu Producto</strong>{" "}
+                </legend>
                 <Campo>
                   <label htmlFor="descripcion">Descripcion</label>
                   <textarea

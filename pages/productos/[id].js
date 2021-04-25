@@ -12,6 +12,9 @@ import Boton from "../../components/ui/Boton";
 
 //Los styled components
 const ContenedorProducto = styled.div`
+  img {
+    border-radius: 10px;
+  }
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -173,20 +176,26 @@ const Producto = () => {
             <h1
               css={css`
                 text-align: center;
-                margin-top: 5rem;
+                margin-top: 4rem;
+                font-family: cursive;
+                text-decoration-line: underline;
               `}
             >
               {nombre}
             </h1>
             <ContenedorProducto>
               <div>
-                <p>
-                  Publicado hace:
-                  {formatDistanceToNow(new Date(creado), { locale: es })}
-                </p>
-                <p>
-                  Publicado por: {creador.nombre} - {empresa}
-                </p>
+                <div css={css`display: flex; justify-content: space-between;`}>
+                  <p>
+                    <strong>Publicado por: </strong> {" "}
+                    {creador.nombre} - {empresa}
+                  </p>
+                  <p>
+                    <strong>Publicado hace: </strong>{" "}
+                    {formatDistanceToNow(new Date(creado), { locale: es })}
+                  </p>
+                </div>
+
                 <img src={urlImg} />
                 <p>{descripcion}</p>
                 {usuario && (
@@ -220,11 +229,12 @@ const Producto = () => {
                         key={`${comentario.usuarioId}-${i}`}
                         css={css`
                           border: 1px solid #e1e1e1;
+                          border-radius: 5px;
                           padding: 2rem;
                         `}
                       >
                         <p>{comentario.mensaje}</p>
-                        <p>
+                        <p css={css`padding-left: 1rem;`}>
                           Escrito por:{" "}
                           <span
                             css={css`
@@ -242,7 +252,11 @@ const Producto = () => {
                   </ul>
                 )}
               </div>
-              <aside>
+              <aside
+                css={css`
+                  padding-top: 20rem;
+                `}
+              >
                 <Boton target="_blank" bgColor="true" href={url}>
                   Visitar URL
                 </Boton>
@@ -255,9 +269,11 @@ const Producto = () => {
                   <p
                     css={css`
                       text-align: center;
+                      font-size: 25px;
+                      font-family: cursive;
                     `}
                   >
-                    {votos} Votos
+                    <strong>{votos} Votos</strong>
                   </p>
                   {usuario && <Boton onClick={votarProducto}>Votar</Boton>}
                 </div>

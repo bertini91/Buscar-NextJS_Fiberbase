@@ -2,10 +2,12 @@ import React from "react";
 import styled from "@emotion/styled";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { es } from "date-fns/locale";
+import { css } from "@emotion/react";
 import Link from "next/link";
 
 const Imagen = styled.img`
   width: 200px;
+  border-radius: 5px;
 `;
 
 const Producto = styled.li`
@@ -42,6 +44,7 @@ const Comentarios = styled.div`
   display: flex;
   align-items: center;
   div {
+    border-radius: 15px;
     display: flex;
     align-items: center;
     border: 1px solid #e1e1e1;
@@ -66,6 +69,7 @@ const Votos = styled.div`
   flex: 0 0 auto;
   text-align: center;
   border: 1px solid #e1e1e1;
+  border-radius: 10px;
   padding: 1rem 3rem;
   div {
     font-size: 2rem;
@@ -93,10 +97,10 @@ const DetalleProducto = ({ producto }) => {
   return (
     <Producto>
       <DescripcionProducto>
-        <div>
+        <div css={css`display: flex; align-items:center;`}>
           <Imagen src={urlImg} alt={nombre} />
         </div>
-        <div>
+        <div css= {css`margin-left: 1rem;`}>
           <Link href="/productos/[id]" as={`/productos/${id}`}>
             <Titulo>{nombre}</Titulo>
           </Link>
@@ -108,7 +112,7 @@ const DetalleProducto = ({ producto }) => {
             </div>
           </Comentarios>
           <p>
-            Publicado hace:
+            <strong>Publicado hace: </strong>
             {formatDistanceToNow(new Date(creado), { locale: es })}
           </p>
         </div>

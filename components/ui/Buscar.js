@@ -5,6 +5,7 @@ import Router from "next/router";
 
 const InputText = styled.input`
   border: 1px solid var(--gris3);
+  border-radius: 5px;
   padding: 1rem;
   min-width: 300px;
 `;
