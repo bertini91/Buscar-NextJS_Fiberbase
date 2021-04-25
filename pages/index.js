@@ -1,5 +1,5 @@
-import DetalleProducto from "../components/layout/DetalleProducto";
 import Layout from "../components/layout/Layout";
+import DetalleProducto from "../components/layout/DetalleProducto";
 import useProductos from "../hooks/useProductos";
 
 export default function Home() {
