@@ -1,6 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Busqueda de productos
+<p align="center"><a href="www.nicolas-bertini.com.ar" target="_blank" ><img width="200" src="./public/static/img/logonb.png" alt="logo"></a></p>
 
-## Getting Started
+## Titulo
+Buscando se encuentra!
+
+## Descripcion
+Este es un proyecto desarrollado en NextJS con los servicios de la plataforma Fiberbase.
+El proyecto lo desarrollé con el objetivo de practicar con NextJs, Hooks y Fiberbase. No lo hice con el objetivo de brindarle un buen diseño, por lo que no se encuentra desarrollado de manera responsive.
+Este proyecto nos brindara la posibilidad de crearnos un usuario, crear nuestro propios productos, comentar y votar productos. Cuenta con políticas de administración para el propietario de cada producto.
+
+## Requerimientos
+Necesita instalar Visual Studio Code, luego clonar el repositorio de GitHub.
+Crearnos una cuenta en la plataforma Fiberbase, iniciar un nuevo proyecto y luego de habilitar lo que es la autenticacion por correo debemos completar el archivo nex.config.js con los valores que nos brindaran.
+
+## Comandos para correr el proyecto son:
+
+```javascript
+git clone URL
+npm install
+npm run dev
+# or
+yarn dev
+```
 
 First, run the development server:
 
@@ -10,25 +31,16 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ejecuta la aplicación en modo de desarrollo. Abra http://localhost:8080/ para verlo en el navegador.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+La página se volverá a cargar si realiza modificaciones. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Puedes conocer más sobre la documentacion de NextJS en:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [Documentación de Next.js] (https://nextjs.org/docs): obtenga información sobre las funciones y la API de Next.js.
+- [Learn Next.js] (https://nextjs.org/learn): un tutorial interactivo de Next.js.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Autor
+Nicolás Bertini Argañaras - Desarrollador freelance
+Mi portafolio: https://www.nicolas-bertini.com.ar/
+Linkedin: www.linkedin.com/in/nicolas-bertini-argañaras
