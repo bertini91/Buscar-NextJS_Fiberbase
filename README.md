@@ -42,5 +42,6 @@ La página se volverá a cargar si realiza modificaciones.
 
 ## Autor
 Nicolás Bertini Argañaras - Desarrollador freelance
-Mi portafolio: https://www.nicolas-bertini.com.ar/
-Linkedin: www.linkedin.com/in/nicolas-bertini-argañaras
+
+- Mi portafolio: https://www.nicolas-bertini.com.ar/
+- Linkedin: www.linkedin.com/in/nicolas-bertini-argañaras
